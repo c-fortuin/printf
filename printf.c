@@ -46,6 +46,12 @@ int _printf(const char *format, ...)
 						break;
 					}
 				case 'd':
+					{
+						int num = va_arg(args, int);
+                                                printf("%d", num);
+                                                count++;
+                                                break;
+					}
 				case 'i':
 					{
 						int num = va_arg(args, int);
